@@ -1,6 +1,6 @@
 import fakeIntRage from './fake-int-range';
 
-const fakeNTimes = async (countInput = 0, generator, { includeCounter } = {}) => {
+const generateNTimes = async (countInput = 0, generator, { includeCounter } = {}) => {
   let count;
 
   if (typeof countInput === 'number') {
@@ -20,4 +20,4 @@ const fakeNTimes = async (countInput = 0, generator, { includeCounter } = {}) =>
   return Promise.all(doc.map(generate => generate()));
 };
 
-export default fakeNTimes;
+export default generateNTimes;
