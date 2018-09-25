@@ -1,0 +1,40 @@
+{
+  "name": "@frontendmonster/test-utils",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "author": "frontendmonster <frontendmonster@gmail.com>",
+  "description": "test-utils for my projects",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frontendmonster/test-utils.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf lib",
+    "prebuild": "npm run clean",
+    "build": "babel src --out-dir lib",
+    "prelint": "eslint src --fix",
+    "lint": "eslint src",
+    "lib:publish": "node ./scripts/publish",
+    "lib:pack": "node ./scripts/publish --just-pack"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.0",
+    "@babel/core": "^7.1.0",
+    "@babel/plugin-transform-runtime": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/runtime": "^7.0.0",
+    "@frontendmonster/dev-utils": "^1.2.0",
+    "@frontendmonster/eslint-config": "^1.0.1",
+    "babel-eslint": "^9.0.0",
+    "babel-plugin-add-module-exports": "^1.0.0",
+    "eslint": "^5.6.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.1",
+    "husky": "^1.0.0-rc.14",
+    "rimraf": "^2.6.2",
+    "yargs": "^12.0.2"
+  }
+}
