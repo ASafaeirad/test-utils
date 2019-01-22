@@ -4,6 +4,6 @@
  * @param {function} generator - Doc Generator Function
  * @param {object} options - Contains includeCounter that pass index as param to generator function
  */
-const fakeIntRange = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+const fakeIntRange = (min: number, max: number): number => Math.floor(Math.random() * (max - min + 1)) + min;
 
 export default fakeIntRange;
