@@ -2,8 +2,9 @@
   "compilerOptions": {
     "target": "es5",
     "module": "commonjs",
-    "lib": ["es6", "es2017", "esnext.asynciterable"],
+    "lib": ["es2017", "esnext.asynciterable"],
     "sourceMap": true,
+    "declaration": true,
     "outDir": "./lib",
     "moduleResolution": "node",
 
@@ -20,6 +21,5 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true
   },
-  "exclude": ["node_modules", "lib"],
   "include": ["./src/**/*.ts"]
 }

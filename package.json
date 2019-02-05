@@ -1,6 +1,6 @@
 {
   "name": "@frontendmonster/test-utils",
-  "version": "2.1.1",
+  "version": "2.2.0",
   "license": "MIT",
   "private": true,
   "author": "frontendmonster <frontendmonster@gmail.com>",
@@ -13,7 +13,7 @@
   "scripts": {
     "clean": "rimraf lib",
     "prebuild": "npm run clean",
-    "build": "tsc --declaration",
+    "build": "tsc",
     "lint": "tslint --project ./ --fix",
     "lib:publish": "builder",
     "lib:pack": "builder --pack"
